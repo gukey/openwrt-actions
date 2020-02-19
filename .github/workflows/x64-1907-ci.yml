@@ -31,6 +31,8 @@ jobs:
           sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
           sudo -E apt-get -y autoremove --purge
           sudo -E apt-get clean
+          git clone git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git openwrt/package/luci-theme-argon
+          
     - name: Clone source code
       env: 
         REPO_URL: https://github.com/Lienol/openwrt
