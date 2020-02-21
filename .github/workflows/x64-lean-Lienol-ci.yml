@@ -46,7 +46,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds install -a
 
     - name: 主题
-      run: git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git openwrt/package
+      run: git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git openwrt/package/luci-theme-argon
     
     - name: Costom configure file
       run: |
