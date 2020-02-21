@@ -5,7 +5,7 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #================================================
-name: X64-1907
+name: X64-lean-Lienol
 
 on:
   schedule:
@@ -13,7 +13,7 @@ on:
   push:
     branches: 
       - master
-# µãÔÞ´¥·¢
+# 点赞推送
   watch:
     types: [started]
 
@@ -45,7 +45,7 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
-    - name: ¿ËÂ¡Ô´´úÂë
+    - name: 主题
       run: git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git openwrt/package
     
     - name: Costom configure file
@@ -83,5 +83,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@master
       with:
-        name: OpenWrt firmware
+        name: OpenWrt-lean-Lienol
         path: ./artifact/
