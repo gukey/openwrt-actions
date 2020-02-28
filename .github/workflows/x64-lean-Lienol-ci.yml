@@ -7,15 +7,15 @@
 #================================================
 name: X64-lean-Lienol
 
-on:
-  schedule:
-    - cron: 0 20 * * *
+#on:
+#  schedule:
+#    - cron: 0 20 * * *
   push:
     branches: 
       - master
 # 点赞推送
-  watch:
-    types: [started]
+#  watch:
+#    types: [started]
 
 jobs:
   build:
